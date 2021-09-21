@@ -1,27 +1,25 @@
-/*body {
-background-image: radial-gradient(circle, #d9e9f8, #e3e7f8, #ece6f4, #f3e6f0, #f6e7eb);    
-}*/
-.hi {
-    padding: 200px;
-    text-align: center;
+body {
+    background-color: #d9e9f8;
+    background-image: linear-gradient(315deg, #d9e9f8 22%, #f6e7eb 74%); 
+}
+.hi, h1 {
+
     color:#394855;
     font-style: italic;
     font-family: nobel, sans-serif;
-    font-weight: 300;
-    
+    font-weight: 300;  
+}
+h1{
+    text-align: left;
+    margin: 0px;
+
 }
   
-section {
-    width: 100%;
-    min-height: 500px;
-}
   
 .wave {
     position: relative;
-    background-color: #d9e9f8;
-    background-image: linear-gradient(315deg, #d9e9f8 22%, #f6e7eb 74%);
 }
-  
+ /*  removed for visual purposes and overlay issues
 .wave:before {
     content: "";
     position: absolute;
@@ -33,3 +31,25 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 }
+*/
+
+.portrait{
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0.75;
+    overflow: hidden;
+    filter: grayscale(88%);
+    
+}
+
+@font-face {
+    font-family: nameFont;
+    src: url(font/GameBattles2Regular-1vXe.ttf);
+ }
+ 
+ h1{
+    font-family: nameFont;
+ }

@@ -14,6 +14,7 @@ $(function () {
 	  $(".container").hide();
 	  $(".hi").hide();
     $(".wave").hide();
+    $(".portrait").hide();
     }, 4400);
   });
 });
