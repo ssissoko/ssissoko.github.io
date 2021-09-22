@@ -1,5 +1,6 @@
 /*Script modified from https://codepen.io/Jackthomsonn/pen/wModMm*/
 $(function () {
+  $(".main").hide();
   var btn = $(".btn");
   btn.on("click", function () {
     $(this).addClass("btn__progress");
@@ -15,6 +16,8 @@ $(function () {
 	  $(".hi").hide();
     $(".wave").hide();
     $(".portrait").hide();
+    $('.main').show();
+    $('body').css('background', '#fafcff');
     }, 4400);
   });
 });
